@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <ion-title>calories calculation</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Total Jumps: </ion-label>
+      <ion-input type="number" [(ngModel)] = "firstNumber" required></ion-input>
+    </ion-item>
+
+    
+
+    <ion-item>
+      <ion-label>Total calories burned: <span class="calories">{{result}}</span></ion-label>
+    </ion-item>
+
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+          <ion-button expand="block" (click)="malt()">calculate</ion-button>
+        </ion-col>
+        
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-title>calorie counter</ion-card-title>
+      <ion-card-subtitle>please fill in the number of your jumps to calculate the number of calories burnt</ion-card-subtitle>
+    </ion-card-header>
+    </ion-card>
+</ion-content>

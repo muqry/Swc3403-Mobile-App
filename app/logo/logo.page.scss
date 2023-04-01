@@ -1,0 +1,33 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%; /* Set the height of the container to the full height of the parent element */
+  }
+
+ion-button{
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #f9e1ac;
+}
+
+ion-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-text {
+    font-size: 12px;
+    color: #777;
+  }
+
+  ion-content {
+    --background: #4c6cb3;
+    --color: #fff;
+  }

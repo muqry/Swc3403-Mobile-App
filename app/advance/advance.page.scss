@@ -1,0 +1,23 @@
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  iframe {
+    max-width: 100%;
+  }
+  
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

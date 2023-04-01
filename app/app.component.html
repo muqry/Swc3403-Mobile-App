@@ -1,0 +1,55 @@
+<ion-app>
+  <ion-menu content-id="main" menuId="main-menu" side="start" type="reveal">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title class="ion-text-canter">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+
+      <ion-list>
+        <ion-item routerLink="/home">
+          <ion-icon name="home-outline"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-item routerLink="/tabata">
+          <ion-icon name="stopwatch-outline"></ion-icon>
+          <ion-label>Tabata</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-item routerLink="/calories">
+          <ion-icon name="calculator-outline"></ion-icon>
+          <ion-label>Calories calculator</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-item routerLink="/beginner">
+          <ion-icon name="thumbs-up-outline"></ion-icon>
+          <ion-label>Beginner</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-item routerLink="/advance">
+          <ion-icon name="skull"></ion-icon>
+          <ion-label>Advanced</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-item routerLink="/about">
+          <ion-icon name="people-outline"></ion-icon>
+          <ion-label>About Us</ion-label>
+        </ion-item>
+      </ion-list>
+
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

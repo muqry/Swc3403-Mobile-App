@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Beginner Tabata</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#tabata" ></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  
+  
+    <div class="title">Tabata</div>
+    <div class="countdown">
+      <ion-label> {{ countdownTime }} second</ion-label>
+      <div class="buttons">
+        <ion-button color="success" (click)="startTimer()">Start</ion-button>
+        <ion-button color="danger" (click)="stopTimer()">Stop</ion-button>
+      </div>
+    </div>
+  
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Total Jumps: </ion-label>
+      <ion-input type="number" [(ngModel)] = "firstNumber" required></ion-input>
+    </ion-item>
+
+    
+
+    <ion-item>
+      <ion-label>Total calories burned: <span class="calories">{{result}}</span></ion-label>
+    </ion-item>
+
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+          <ion-button expand="block" (click)="malt()">calculate</ion-button>
+        </ion-col>
+        
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+  </ion-content>
